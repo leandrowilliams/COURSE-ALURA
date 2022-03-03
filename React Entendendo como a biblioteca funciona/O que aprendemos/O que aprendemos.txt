@@ -1,0 +1,27 @@
+O que aprendemos nessa aula:
+
+Como podemos criar class components
+
+Entendendo como o JSX renderiza objetos
+
+Hierarquia entre componentes (Pai/filhos)
+
+Componentes podem ter filhos que são componentes
+
+Como integrar o Javascript no meio do seu JSX
+
+/////////////////////////////////////
+
+Como integrar CSS dentro da sua aplicação React
+
+Diferenças do class e className
+
+Propriedade "key" dos componentes
+
+Padrão de nomenclatura do CSS
+
+Tratando o conflito de nomes
+
+Ponto de entrada dos módulos
+
+Organização do projeto
