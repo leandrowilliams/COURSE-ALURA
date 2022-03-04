@@ -5,10 +5,13 @@ import './assets/App.css';
 import './assets/index.css';
 
 class App extends Component {
+    createNote(title, text){
+        console.log('Uma novo card foi criado ' + title + " " + text)
+    }
     render() {
         return (
             <section className="content">
-                <FormRegistration />
+                <FormRegistration createNote={this.createNote} />
                 <ListOfNotes />
             </section>
         );
