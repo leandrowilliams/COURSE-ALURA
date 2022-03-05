@@ -5,13 +5,13 @@ import './assets/App.css';
 import './assets/index.css';
 
 class App extends Component {
-    constructor(){
+    constructor() {
         super();
         this.notes = [];
     }
-    createNote(title, text){
+    createNote(title, text) {
         // console.log('Uma novo card foi criado ' + title + " " + text)
-        const newNote = {title, text};
+        const newNote = { title, text };
         this.notes.push(newNote);
         console.log(this.notes.length);
     }
@@ -26,4 +26,5 @@ class App extends Component {
 }
 //react -> lib
 // React -> ecossistema
+// new.ListOfNotes({notes:this.notes})
 export default App;
