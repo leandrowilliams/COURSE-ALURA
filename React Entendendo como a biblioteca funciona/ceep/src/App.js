@@ -7,19 +7,23 @@ import './assets/index.css';
 class App extends Component {
     constructor() {
         super();
-        this.notes = [];
+        this.state = {
+            notes: [],
+        };
     }
     createNote(title, text) {
-        // console.log('Uma novo card foi criado ' + title + " " + text)
         const newNote = { title, text };
-        this.notes.push(newNote);
-        console.log(this.notes.length);
+        const newArrayNotes = [...this.state.notes, newNote];
+        const newState = {
+            notes: newArrayNotes,
+        };
+        this.setState(newState);
     }
     render() {
         return (
             <section className="content">
                 <FormRegistration createNote={this.createNote.bind(this)} />
-                <ListOfNotes notes={this.notes} />
+                <ListOfNotes notes={this.state.notes} />
             </section>
         );
     }
