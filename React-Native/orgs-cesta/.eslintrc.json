@@ -1,0 +1,44 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "jest": true
+    },
+    "plugins": ["react", "jsx-a11y", "import", "prettier", "import-helpers"],
+    "extends": [
+        "airbnb",
+        "prettier",
+        "prettier/react",
+        "plugin:react/recomended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "rules": {
+        "prettier/prettier": "error",
+        "react/jsx-filename-extension": [
+            "error",
+            { "extensions": [".js", ".jsx"] }
+        ],
+        "global-require": "off",
+        "import/prefer-default-export": "off",
+        "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
+        "import-helpers/order-imports": [
+            "warn",
+            {
+                // example configuration
+                "newlinesBetween": "always",
+                "groups": [
+                    "/^react/",
+                    "module",
+                    ["parent", "sibling", "index"]
+                ],
+                "alphabetize": { "order": "asc", "ignoreCase": true }
+            }
+        ]
+    }
+}
